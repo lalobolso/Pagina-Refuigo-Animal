@@ -1,0 +1,238 @@
+/* --- ESTILO BASE DE LOS LINKS --- */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-bottom: 5px;
+}
+
+/* --- COLOR AL PASAR EL MOUSE --- */
+.navbar-nav .nav-link:hover {
+  color: #d32f2f;
+}
+
+/* --- SUBRAYADO SUAVE --- */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #d32f2f;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+
+/* --- COLOR FIJO Y SUBRAYADO CUANDO ESTÁ ACTIVO --- */
+.navbar-nav .nav-link.active {
+  color: #d32f2f !important;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+}
+
+
+/* Expediente */
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+#carouselExampleIndicators .carousel-inner img {
+  max-height: 500px;
+  /* ajusta según lo que necesites */
+  object-fit: cover;
+  /* mantiene el aspecto y recorta si es necesario */
+}
+
+#contactForm {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+#contactForm:hover {
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.25);
+}
+
+#contactForm h2 {
+  letter-spacing: 1px;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form .btn {
+  transition: transform 0.2s ease;
+}
+
+form .btn:hover {
+  transform: scale(1.05);
+}
+
+#ubicacionCard {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+#ubicacionCard:hover {
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Opcional: mejora visual */
+#ubicacionCard h2 {
+  letter-spacing: 1px;
+}
+
+
+/* Modo oscuro */
+/* En tu archivo styles.css */
+
+/* Variables CSS para modo claro */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --card-bg: #ffffff;
+  --footer-bg: #343a40;
+  --navbar-bg: #f8f9fa;
+  --danger-color: #dc3545;
+  --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Variables CSS para modo oscuro */
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #2d2d2d;
+  --text-primary: #e9ecef;
+  --text-secondary: #adb5bd;
+  --border-color: #495057;
+  --card-bg: #1e1e1e;
+  --footer-bg: #0d0d0d;
+  --navbar-bg: #1a1a1a;
+  --danger-color: #ff6b6b;
+  --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+/* Aplicar variables a elementos */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.navbar-light {
+  background-color: var(--navbar-bg) !important;
+}
+
+.bg-light {
+  background-color: var(--bg-secondary) !important;
+}
+
+.bg-dark {
+  background-color: var(--footer-bg) !important;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.form-control,
+.form-select {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--danger-color);
+}
+
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+.border-secondary {
+  border-color: var(--border-color) !important;
+}
+
+/* Botón de toggle del tema */
+#themeToggle {
+  border-color: var(--border-color);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+  background-color: var(--bg-tertiary);
+}
+
+
+/* Donacion */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+#donaciones {
+  background: linear-gradient(135deg, #f8f9fa 0%);
+}
+
+.donation-progress {
+  height: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
