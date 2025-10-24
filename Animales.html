@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,9 @@
 <body>
 
   <!-- Alerta de confirmación -->
-  <div id="alertaExito" class="alert alert-success alert-dismissible fade show text-center d-none position-fixed top-0 start-50 translate-middle-x mt-3 w-75" role="alert" style="z-index: 1055;">
+  <div id="alertaExito"
+    class="alert alert-success alert-dismissible fade show text-center d-none position-fixed top-0 start-50 translate-middle-x mt-3 w-75"
+    role="alert" style="z-index: 1055;">
     🐾 <strong id="alertaMensaje">¡Gracias por tu solicitud!</strong>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
   </div>
@@ -37,6 +40,7 @@
           <li class="nav-item"><a class="nav-link active" href="Animales.html">Animales</a></li>
           <li class="nav-item"><a class="nav-link" href="Expediente.html">Expediente</a></li>
           <li class="nav-item"><a class="nav-link" href="Ayuda.html">Ayuda</a></li>
+          <li class="nav-item"><a class="nav-link" href="Donación.html">Donar</a></li>
           <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="Ubicación.html">Ubicación</a></li>
           <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
@@ -57,10 +61,12 @@
   <div class="container text-center my-4">
     <ul class="nav nav-tabs justify-content-start" id="animalTabs" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="perros-tab" data-bs-toggle="pill" data-bs-target="#perros" type="button" role="tab" aria-controls="perros" aria-selected="true">🐶 Perros</button>
+        <button class="nav-link active" id="perros-tab" data-bs-toggle="pill" data-bs-target="#perros" type="button"
+          role="tab" aria-controls="perros" aria-selected="true">🐶 Perros</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="gatos-tab" data-bs-toggle="pill" data-bs-target="#gatos" type="button" role="tab" aria-controls="gatos" aria-selected="false">🐱 Gatos</button>
+        <button class="nav-link" id="gatos-tab" data-bs-toggle="pill" data-bs-target="#gatos" type="button" role="tab"
+          aria-controls="gatos" aria-selected="false">🐱 Gatos</button>
       </li>
     </ul>
   </div>
@@ -77,7 +83,9 @@
             <div class="card-body text-center">
               <h5 class="card-title">Rocky</h5>
               <p class="card-text">Pastor Alemán de 3 años, muy activo y cariñoso.</p>
-              <button class="btn btn-danger btn-adoptar" data-animal="Rocky" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <button class="btn btn-danger btn-adoptar" data-animal="Rocky" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
+
               <a href="Expediente.html#rocky" class="btn btn-outline-secondary">Ver Expediente</a>
             </div>
           </div>
@@ -89,7 +97,8 @@
             <div class="card-body text-center">
               <h5 class="card-title">Toby</h5>
               <p class="card-text">Mestizo de 2 años, juguetón y amistoso.</p>
-              <button class="btn btn-danger btn-adoptar" data-animal="Toby" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <button class="btn btn-danger btn-adoptar" data-animal="Toby" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
               <a href="Expediente.html#max" class="btn btn-outline-secondary">Ver Expediente</a>
             </div>
           </div>
@@ -101,7 +110,8 @@
             <div class="card-body text-center">
               <h5 class="card-title">Max</h5>
               <p class="card-text">Labrador Retriever de 4 años, ideal para familias.</p>
-              <button class="btn btn-danger btn-adoptar" data-animal="Max" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <button class="btn btn-danger btn-adoptar" data-animal="Max" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
               <a href="Expediente.html#toby" class="btn btn-outline-secondary">Ver Expediente</a>
             </div>
           </div>
@@ -112,8 +122,9 @@
             <img src="img/perro4.jpg" class="card-img-top" alt="Bruno" width="300" height="300">
             <div class="card-body text-center">
               <h5 class="card-title">Bruno</h5>
-              <p class="card-text">Bulldog de 5 años, tranquilo y obediente.</p>
-              <button class="btn btn-danger btn-adoptar" data-animal="Bruno" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <p class="card-text">Boxer de 5 años, tranquilo y obediente.</p>
+              <button class="btn btn-danger btn-adoptar" data-animal="Bruno" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
               <a href="Expediente.html#bruno" class="btn btn-outline-secondary">Ver Expediente</a>
             </div>
           </div>
@@ -131,7 +142,8 @@
             <div class="card-body text-center">
               <h5 class="card-title">Luna</h5>
               <p class="card-text">Gata criolla de 2 años, tranquila y amorosa.</p>
-              <button class="btn btn-danger btn-adoptar" data-animal="Luna" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <button class="btn btn-danger btn-adoptar" data-animal="Luna" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
               <a href="Expediente.html#luna" class="btn btn-outline-secondary">Ver Expediente</a>
             </div>
           </div>
@@ -143,7 +155,8 @@
             <div class="card-body text-center">
               <h5 class="card-title">Cleo</h5>
               <p class="card-text">Siamesa de 3 años, inteligente y elegante.</p>
-              <button class="btn btn-danger btn-adoptar" data-animal="Cleo" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <button class="btn btn-danger btn-adoptar" data-animal="Cleo" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
               <a href="Expediente.html#cleo" class="btn btn-outline-secondary">Ver Expediente</a>
             </div>
           </div>
@@ -154,7 +167,8 @@
             <img src="img/gata3.jpg" class="card-img-top" alt="Mimi" width="300" height="300">
             <div class="card-body text-center">
               <h5 class="card-title">Mimi</h5>
-              <button class="btn btn-danger btn-adoptar" data-animal="Mimi" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <button class="btn btn-danger btn-adoptar" data-animal="Mimi" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
               <a href="Expediente.html#mimi" class="btn btn-outline-secondary">Ver Expediente</a>
             </div>
           </div>
@@ -166,7 +180,8 @@
             <div class="card-body text-center">
               <h5 class="card-title">Nala</h5>
               <p class="card-text">Gato de 1 año, muy tranquilo y cariñoso.</p>
-              <button class="btn btn btn-danger btn-adoptar" data-animal="Nala" data-bs-toggle="modal" data-bs-target="#modalAdoptar">Adoptar</button>
+              <button class="btn btn btn-danger btn-adoptar" data-animal="Nala" data-bs-toggle="modal"
+                data-bs-target="#modalAdoptar">Adoptar</button>
               <a href="Expediente.html#nala" class="btn btn-outline-secondary ">Ver Expediente</a>
             </div>
           </div>
@@ -211,54 +226,64 @@
     </div>
   </div>
 
- <footer class="bg-dark text-white mt-5 pt-5 pb-3 border-top" id="contacto">
-  <div class="container">
-    <div class="row text-center text-md-center">
-      <!-- Columna 1: Información -->
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold text-danger">Patitas Felices</h4>
-        <p class="small">
-          Dedicados a rescatar y encontrar hogares amorosos para animales en situación de vulnerabilidad desde 2025.
-        </p>
-        <div class="d-flex justify-content-center justify-content-md-center gap-3">
-          <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-          <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
-          <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+  <footer class="bg-dark text-white mt-5 pt-5 pb-3 border-top" id="contacto">
+    <div class="container">
+      <div class="row text-center text-md-center">
+        <!-- Columna 1: Información -->
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold text-danger">Patitas Felices</h4>
+          <p class="small">
+            Dedicados a rescatar y encontrar hogares amorosos para animales en situación de vulnerabilidad desde 2025.
+          </p>
+          <div class="d-flex justify-content-center justify-content-md-center gap-3">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces rápidos -->
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold text-danger">Enlaces Rápidos</h4>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="text-white text-decoration-none d-block mb-1"><i
+                  class="fas fa-paw me-2 text-white"></i>Inicio</a></li>
+            <li><a href="Animales.html" class="text-white text-decoration-none d-block mb-1"><i
+                  class="fas fa-dog me-2 text-white"></i>Animales en Adopción</a></li>
+            <li><a href="Ayuda.html" class="text-white text-decoration-none d-block mb-1"><i
+                  class="fas fa-hands-helping me-2 text-white"></i>Voluntariado</a></li>
+            <li><a href="Contacto.html" class="text-white text-decoration-none d-block mb-1"><i
+                  class="fas fa-envelope me-2 text-white"></i>Contacto</a></li>
+            <li><a href="Ubicación.html" class="text-white text-decoration-none d-block mb-1"><i
+                  class="fas fa-envelope me-2 text-white"></i>Ubicación</a></li>
+            <li><a href="Login.html" class="text-white text-decoration-none d-block mb-1"><i
+                  class="fas fa-user me-2 text-white"></i>Login</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold text-danger">Contacto</h4>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-white"></i>Calle Animales 123, Ciudad</li>
+            <li class="mb-2"><i class="fas fa-phone me-2 text-white"></i>(123) 456-7890</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2 text-white"></i>info@patitasfelices.org</li>
+            <li class="mb-2"><i class="fas fa-clock me-2 text-white"></i>Lunes a Viernes: 9:00 - 18:00</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Columna 2: Enlaces rápidos -->
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold text-danger">Enlaces Rápidos</h4>
-        <ul class="list-unstyled small">
-          <li><a href="index.html" class="text-white text-decoration-none d-block mb-1"><i class="fas fa-paw me-2 text-white"></i>Inicio</a></li>
-          <li><a href="Animales.html" class="text-white text-decoration-none d-block mb-1"><i class="fas fa-dog me-2 text-white"></i>Animales en Adopción</a></li>
-          <li><a href="Ayuda.html" class="text-white text-decoration-none d-block mb-1"><i class="fas fa-hands-helping me-2 text-white"></i>Voluntariado</a></li>
-          <li><a href="Contacto.html" class="text-white text-decoration-none d-block mb-1"><i class="fas fa-envelope me-2 text-white"></i>Contacto</a></li>
-          <li><a href="Ubicación.html" class="text-white text-decoration-none d-block mb-1"><i class="fas fa-envelope me-2 text-white"></i>Ubicación</a></li>
-          <li><a href="Login.html" class="text-white text-decoration-none d-block mb-1"><i class="fas fa-user me-2 text-white"></i>Login</a></li>
-        </ul>
-      </div>
-
-      <!-- Columna 3: Contacto -->
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold text-danger">Contacto</h4>
-        <ul class="list-unstyled small">
-          <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-white"></i>Calle Animales 123, Ciudad</li>
-          <li class="mb-2"><i class="fas fa-phone me-2 text-white"></i>(123) 456-7890</li>
-          <li class="mb-2"><i class="fas fa-envelope me-2 text-white"></i>info@patitasfelices.org</li>
-          <li class="mb-2"><i class="fas fa-clock me-2 text-white"></i>Lunes a Viernes: 9:00 - 18:00</li>
-        </ul>
+      <hr class="border-secondary">
+      <div class="text-center small text-secondary">
+        © 2025 AKAGI. Todos los derechos reservados.
       </div>
     </div>
-
-    <hr class="border-secondary">
-    <div class="text-center small text-secondary">
-      © 2025 AKAGI. Todos los derechos reservados.
-    </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
+
+
+No funciona en: Nuestra mision, Expediente, Contacto y Ubicacion

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login - Refugio Animal</title>
+  <title>Patitas Felices - Animales</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -14,9 +14,10 @@
 
 <body>
 
+    <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="img/Logo.png" alt="Logo Patitas Felices" width="50" height="50" class="me-2">
         <span class="fw-bold">Patitas Felices</span>
       </a>
@@ -31,81 +32,94 @@
           <li class="nav-item"><a class="nav-link" href="Animales.html">Animales</a></li>
           <li class="nav-item"><a class="nav-link" href="Expediente.html">Expediente</a></li>
           <li class="nav-item"><a class="nav-link" href="Ayuda.html">Ayuda</a></li>
-          <li class="nav-item"><a class="nav-link" href="Donación.html">Donar</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Donación.html">Donar</a></li>
           <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="Ubicación.html">Ubicación</a></li>
-          <li class="nav-item"><a class="nav-link active" href="Login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+          
         </ul>
       </div>
     </div>
   </nav>
 
+    <!-- SECCIÓN DE DONACIONES -->
+    <section id="donaciones" class="py-5 text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- LADO IZQUIERDO -->
+                <div class="col-md-6 mb-4 mb-md-0 text-dark">
+                    <h2 class="display-5 fw-bold mb-4 text-danger">Tu donación salva vidas</h2>
+                    <p class="lead">Con tu apoyo podemos seguir rescatando y cuidando animales necesitados.</p>
+                    <p>Las donaciones nos permiten cubrir:</p>
+                    <ul>
+                        <li>Atención veterinaria y medicamentos</li>
+                        <li>Alimentación de calidad</li>
+                        <li>Mejoras en nuestras instalaciones</li>
+                        <li>Programas de esterilización</li>
+                    </ul>
 
-  <section class="d-flex align-items-center justify-content-center" style="min-height: 80vh;">
-    <div class="container login-container d-flex align-items-center justify-content-center">
-      <div class="card p-4 w-100" style="max-width: 900px;">
-        <div class="row g-0">
+                    <div class="mt-4">
+                        <h5>Meta de recaudación mensual</h5>
+                        <div class="progress donation-progress mb-2">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                                aria-valuemin="0" aria-valuemax="100">$3,250 / $5,000</div>
+                        </div>
+                        <p class="small">Actualizado hace 2 días</p>
+                    </div>
+                </div>
 
-          <!-- REGISTRO -->
-          <div class="col-md-6 border-end pe-4">
-            <h3 class="card-title mb-4 text-center text-danger">Registrarse</h3>
-            <form>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre completo</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
-              </div>
+                <!-- LADO DERECHO -->
+                <div class="col-md-6">
+                    <div class="card text-dark">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4 text-center text-danger">Realiza una donación</h4>
 
-              <div class="mb-3">
-                <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
-              </div>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="donationAmount" class="form-label">Cantidad</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="donationAmount" placeholder="0.00" min="1" required>
+                                    </div>
+                                </div>
 
-              <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" placeholder="Tu número de contacto" required>
-              </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Frecuencia</label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="frequency" id="oneTime" checked>
+                                            <label class="form-check-label" for="oneTime">Una vez</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="frequency" id="monthly">
+                                            <label class="form-check-label" for="monthly">Mensual</label>
+                                        </div>
+                                    </div>
+                                </div>
 
-              <div class="mb-3">
-                <label for="password1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password1" placeholder="Crea una contraseña" required>
-              </div>
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                </div>
 
-              <div class="mb-3">
-                <label for="password2" class="form-label">Confirmar contraseña</label>
-                <input type="password" class="form-control" id="password2" placeholder="Repite la contraseña" required>
-              </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
 
-              <button type="submit" class="btn btn-outline-danger w-100">Registrarme</button>
-            </form>
-          </div>
+                                <button type="submit" class="btn btn-outline-danger w-100">Donar ahora</button>
+                                <p class="small text-muted mt-2 text-center">Tus datos están protegidos y tu donación es segura.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- LOGIN -->
-          <div class="col-md-6 ps-4">
-            <h3 class="card-title mb-4 text-center text-danger">Iniciar Sesión</h3>
-            <form>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="Tu contraseña" required>
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="remember">
-                <label class="form-check-label" for="remember">Recordarme</label>
-              </div>
-              <button type="submit" class="btn btn-outline-danger w-100">Entrar</button>
-              <div class="text-center mt-3">
-                <a href="Contacto.html" class="text-decoration-none text-danger">¿Olvidaste tu contraseña?</a>
-              </div>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Footer -->
   <footer class="bg-dark text-white mt-5 pt-5 pb-3 border-top" id="contacto">
     <div class="container">
       <div class="row text-center text-md-center">
@@ -156,13 +170,13 @@
 
       <hr class="border-secondary">
       <div class="text-center small text-secondary">
-        © 2025 Patitas Felices. Todos los derechos reservados.
+        © 2025 Todos los derechos reservados.
       </div>
     </div>
   </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
